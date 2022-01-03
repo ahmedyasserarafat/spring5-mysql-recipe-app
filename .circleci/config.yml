@@ -36,7 +36,7 @@ jobs:
       # Then run your tests!
       - run:
         name: Test
-        command: mvn integration-test
+        command: mvn verify
 
 
 # Invoke jobs via workflows
