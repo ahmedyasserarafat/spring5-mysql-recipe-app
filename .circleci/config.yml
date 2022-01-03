@@ -41,8 +41,8 @@ jobs:
          name: Test
          command: mvn clean test jacoco:report
       - store_test_results:
-          #path: target/jacoco-report
-          path: target/surefire-reports
+          path: target/jacoco-report
+          #path: target/surefire-reports
 
       - run:
           name: Send to CodeCov
