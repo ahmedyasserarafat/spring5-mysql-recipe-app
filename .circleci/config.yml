@@ -34,9 +34,10 @@ jobs:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}
       # Then run your tests!
+
       - run:
-        name: Test
-        command: mvn verify
+         name: Test
+         command: mvn verify
 
 
 # Invoke jobs via workflows
