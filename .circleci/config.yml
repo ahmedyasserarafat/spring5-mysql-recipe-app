@@ -39,7 +39,7 @@ jobs:
          name: Test
          command: mvn integration-test
       - store_artifacts:
-          path: target
+          path: target/jacoco-report
 
 
 # Invoke jobs via workflows
