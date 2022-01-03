@@ -39,7 +39,7 @@ jobs:
 
       - run:
          name: Test
-         command: mvn integration-test
+         command: mvn clean test jacoco:report
       - store_test_results:
           path: target/jacoco-report
           #path: target/surefire-reports
